@@ -21,7 +21,7 @@ describe "GIT" do
 
   it "4. What command allows you to add all previously all tracked, modified files
       and create a message, 'add img to index' for the commit in one command?" do
-    answer = "git add --all -m 'add img to index'"
+    answer = "git commit -am 'add img to index'"
     encoded_answer = "00565151beeb1fa3682d6386399eaf87b788a5bc"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -76,7 +76,7 @@ describe "GIT" do
 
   it "11. What command do you run to update the local master branch with the
       master branch on the remote 'upstream'?" do
-    answer = "git fetch -p"
+    answer = "git fetch upstream master"
     encoded_answer = "10ce0782f27a2e126f7fe0f12dd189cc16578e26"
     expect(encode(answer)).to eq(encoded_answer)
   end
